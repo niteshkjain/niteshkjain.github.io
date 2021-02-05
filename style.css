@@ -1,0 +1,42 @@
+
+.corosel{
+    float: left;
+}
+.register{
+    float: right;
+    width: 50%
+}
+
+.footer{
+    padding-top: 35vw;
+}
+
+footer{
+    background-color: #f8f8f8!important;
+}
+
+.main{
+    padding-top: 2rem!important;
+}
+
+
+.card-custom {
+    max-width: 300px!important;
+}
+
+.cards{
+    margin: 20px;
+}
+
+.card-custom img{
+    height: fit-content!important;
+}
+
+.custdetail{
+    align-content: center!important;
+    padding-left: 33em;
+}
+
+.padcolplan{
+    padding : 4px!important;
+}

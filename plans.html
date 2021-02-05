@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/wifi.svg"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Dispur Wireless</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</head>
+<body>
+    <header class="shadow-md header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand m-2" href="#">
+            <img src="assets/wifi.svg" alt="Dispur Wireless" width="30" height="24" class="d-inline-block align-top bg-primary">  
+            DISPUR Wireless</a>
+            <ul class="nav justify-content">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="plans.html">Plans<span class="sr-only"></span></a>
+              </li>
+            </ul>
+            
+            
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-primary m-2" data-toggle="modal" data-target="#loginModal">Admin Login</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary m-2" data-toggle="modal" data-target="#loginModal">Customer Login</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </header>
+
+
+<main class="container pb-5">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Plans</h1>
+    </div>
+  
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Regular</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">&#8377 449 <small class="text-muted">/ month</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Upto 30 Mbps till 3300 GB</li><hr>
+            <li>Unlimited call any network 24 hrs</li><hr>
+            <li>Unlimited Data Download</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Pro</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">&#8377 599 <small class="text-muted">/ month</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Upto 60 Mbps till 3300GB</li><hr>
+            <li>Unlimited call any network 24 hrs</li><hr>
+            <li>Unlimited Data Download</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Enterprise</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">&#8377 777 <small class="text-muted">/ month</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Upto 100 Mbps till 500GB</li><hr>
+            <li>Unlimited call any network 24 hrs</li><hr>
+            <li>Unlimited Data Download</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+    <button type="button" class="w-100 btn btn-lg btn-primary" onclick="relocate_home()">Register now to subscribe plans</button>
+    </main>
+
+
+    <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="loginModalTitle">Login Here</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="leml">Email</label>
+          <input type="email" class="form-control" id="leml" placeholder="Enter your Username" required />
+        </div>
+        <div class="form-group">
+          <label for="lps">Password</label>
+          <input type="password" class="form-control" id="lps" placeholder="Enter your Password" required />
+        </div>
+      <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!--- Footer --->
+    <div>
+<footer class="text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      
+      <!--Grid column-->
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Address</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+              250 Jatia, Kahilipara
+          </li>
+          <li>
+              Guwahati, Assam, 781019
+          </li>
+          <li>
+              03612382385
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Us</h5>
+
+        <p>
+          Dispur Wireless, Assam’s largest wireless provider provides wireless voice and data communications
+services across Assam to more than 9 million customers.
+Dispur Cable, cable business of Dispur is a leading cable services provider, offering cable television,
+high-speed Internet access, and telephony products for residential and business customers.
+
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Our Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            Wireless Internet Conection
+          </li>
+          <li>
+            FIber Connection
+          </li>
+          <li>
+            Land-Line Connection
+          </li>
+          <li>
+            WAN Connection
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2021 Copyright:
+    <a class="text-dark" href="#">Dispur Wireless</a>
+  </div>
+
+</footer>
+</div>
+<!-- Footer -->
+
+
+<!-- Registered Successfull Modal -->
+<div class="modal" id="registered" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Congratulations!!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>You have successfull registered. please login to move further.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login Now</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

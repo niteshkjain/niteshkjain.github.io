@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/wifi.svg"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Dispur Wireless</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</head>
+<body>
+    <header class="shadow-md header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand m-2" href="#">
+            <img src="assets/wifi.svg" alt="Dispur Wireless" width="30" height="24" class="d-inline-block align-top bg-primary">  
+            DISPUR Wireless</a>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <h4 class="nav-link">Welcome, Admin Saahab</h4>
+                
+              </li>
+            </ul>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                
+                <button type="button" class="btn btn-primary m-2""><a href="index.html" style="color: white;">Log Out</a></button>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      </header>
+
+      <div class="container">
+        <div class="pricing-header px-3 py-3 pt-md-5 mx-auto text-center">
+          <h1 class="display-4">Usage Management</h1>
+        </div>
+        <div class="row mt-5 p-2 justify-content-center">
+          <div class="card cards" style="width: 15rem;">
+            <img class="card-img-top" src="assets/usage1.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Enter Usage Details of a Customer</h5><hr>
+              <a class="card-link btn btn-primary" data-toggle="modal" data-target="#fillusage" style="color:white;">Enter</a>
+            </div>
+          </div>
+
+          <div class="card cards" style="width: 15rem;">
+            <img class="card-img-top" src="assets/calculate.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Calculate usage & Generate bill for a Customer</h5><hr>
+              <a class="card-link btn btn-primary" data-toggle="modal" data-target="#calculate" style="color:white;">Calculate</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div>
+<footer class="text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      
+      <!--Grid column-->
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Address</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+              250 Jatia, Kahilipara
+          </li>
+          <li>
+              Guwahati, Assam, 781019
+          </li>
+          <li>
+              03612382385
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Us</h5>
+
+        <p>
+          Dispur Wireless, Assam’s largest wireless provider provides wireless voice and data communications
+services across Assam to more than 9 million customers.
+Dispur Cable, cable business of Dispur is a leading cable services provider, offering cable television,
+high-speed Internet access, and telephony products for residential and business customers.
+
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Our Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            Wireless Internet Conection
+          </li>
+          <li>
+            FIber Connection
+          </li>
+          <li>
+            Land-Line Connection
+          </li>
+          <li>
+            WAN Connection
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2021 Copyright:
+    <a class="text-dark" href="#">Dispur Wireless</a>
+  </div>
+
+</footer>
+</div>
+<!-- Footer -->
+
+<!-- Add usage data Modal -->
+<div class="modal" id="fillusage" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Usage Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+                <div class="form-group">
+                    <label for="rid">Registration Id: </label>
+                    <input type="text" class="form-control" id="rid" placeholder="Eg. 12345" required />
+                  </div>
+  
+              <div class="form-group">
+                <label for="date">Date: </label>
+                <input type="date" class="form-control" id="date" required />
+              </div>
+  
+            <div class="form-group">
+                <label for="usagetype">Usage Type (Call/Internet data): </label>
+                <input type="text" class="form-control" id="usagetype" placeholder="Eg. Internet Data" required />
+              </div>
+  
+            <div class="form-group">
+                <label for="duration">Duration (seconds for calls and KB for Interet data): </label>
+                <input type="text" class="form-control" id="duration" placeholder="Eg. Eg. 20 seconds" required />
+              </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#success" data-dismiss="modal">Add usage details</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Registered Successfull Modal -->
+<div class="modal" id="success" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Task Completed</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Usage data has been filled.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Enter Reg Id to calculate usage and generate bill-->
+<div class="modal" id="calculate" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Usage Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+                <div class="form-group">
+                    <label for="rid">Registration Id: </label>
+                    <input type="text" class="form-control" id="rid" placeholder="Eg. 12345" required />
+                  </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bill" data-dismiss="modal">Calculate & Generate Bill</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--BILL-->
+<div class="modal" id="bill" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Usage Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Plan: &#8377;599 @pro <hr>
+        Months: 3<hr>
+        Total Bill: &#8377;1797
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sendbill" data-dismiss="modal">Send Bill</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Send Bill-->
+<div class="modal" id="sendbill" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Bill Sent</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bill has been sent successfully.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

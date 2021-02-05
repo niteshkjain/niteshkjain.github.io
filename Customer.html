@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/wifi.svg"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Dispur Wireless</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</head>
+<body>
+    <header class="shadow-md header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand m-2" href="#">
+            <img src="assets/wifi.svg" alt="Dispur Wireless" width="30" height="24" class="d-inline-block align-top bg-primary">  
+            DISPUR Wireless</a>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <h4 class="nav-link">Welcome, Nitesh Jain</h4>
+                
+              </li>
+            </ul>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                
+                <button type="button" class="btn btn-primary m-2""><a href="index.html" style="color: white;">Log Out</a></button>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      </header>
+      <div class="pricing-header px-3 py-3 pt-md-5 mx-auto text-center">
+        <h1 class="display-4">User Portal</h1>
+      </div>
+      <div class="container">
+        <div class="row p-5 justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="assets/updatedetails.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Update Details</h5><hr>
+              <a class="card-link btn btn-primary" data-toggle="modal" data-target="#updateprofile" style="color: white;">Update details</a>
+            </div>
+          </div>
+
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="assets/tarrif.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tariff Plans</h5><hr>
+              <a href="cust_planslogin.html" class="card-link btn btn-primary">View or Change</a>
+            </div>
+          </div>
+
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="assets/usage2.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">View Usage Details</h5><hr>
+              <a class="card-link btn btn-primary" data-toggle="modal" data-target="#viewusage"  style="color: white;">View</a>
+            </div>
+          </div>
+
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="assets/bill.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">View Bill</h5><hr>
+              <a class="card-link btn btn-primary" data-toggle="modal" data-target="#viewbill"  style="color: white;">View</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div>
+<footer class="text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      
+      <!--Grid column-->
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Address</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+              250 Jatia, Kahilipara
+          </li>
+          <li>
+              Guwahati, Assam, 781019
+          </li>
+          <li>
+              03612382385
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Us</h5>
+
+        <p>
+          Dispur Wireless, Assam’s largest wireless provider provides wireless voice and data communications
+services across Assam to more than 9 million customers.
+Dispur Cable, cable business of Dispur is a leading cable services provider, offering cable television,
+high-speed Internet access, and telephony products for residential and business customers.
+
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Our Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            Wireless Internet Conection
+          </li>
+          <li>
+            FIber Connection
+          </li>
+          <li>
+            Land-Line Connection
+          </li>
+          <li>
+            WAN Connection
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2021 Copyright:
+    <a class="text-dark" href="#">Dispur Wireless</a>
+  </div>
+
+</footer>
+</div>
+<!-- Footer -->
+
+
+<!--Update Profile Modal-->
+<div class="modal" id="updateprofile" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Update Profile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  <form>
+            <div class="form-group">
+                <label for="fullname">Full Name: </label>
+                <input type="text" class="form-control" id="fullname" value="Nitesh Jain" />
+              </div>
+
+              <div class="form-group">
+                <label for="rids">Registration Id: </label>
+                <input type="number" class="form-control" id="rids" value="12345" disabled/>
+              </div>
+
+              <div class="form-group">
+                <label for="plan">Plan: </label>
+                <input type="text" class="form-control" id="plan" value="Pro @599/Month" disabled />
+              </div>
+
+              <div class="form-group">
+                <label for="eml">Email: </label>
+                <input type="email" class="form-control" id="eml" value="nitesh@gmail.com" />
+              </div>
+
+            <div class="form-group">
+                <label for="adrs">Address: </label>
+                <input type="text" class="form-control" id="adrs" value="Yantra Park, Mumbai" />
+              </div>
+  
+            <div class="form-group">
+                <label for="ph">Phone Number: </label>
+                <input type="number" class="form-control" id="ph" value="0123456789" />
+            </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <input type="button" class="btn btn-success justify-content-end" value="Update" data-toggle="modal" data-target="#success" data-dismiss="modal" />
+  </div>
+</div>
+</div>
+</div>
+
+<!--Success Update Modal-->
+<div class="modal" id="success" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Profile Updated successfully</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Profile updation process may take 24 hrs, so be patient.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--View Usage Modal-->
+<div class="modal" id="viewusage" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Usage details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre>
+Data Qouta: Unlimited
+Used Data: 45 GB
+<hr>
+Call Qouta: Unlimited
+Used Calls: 3 hrs
+        </pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--View Bill Modal-->
+<div class="modal" id="viewbill" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Bill</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Plan: &#8377;599 @pro <hr>
+        Months: 3<hr>
+        Total Bill: &#8377;1797
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paybill" data-dismiss="modal">Pay Bill</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Pay Bill Modal-->
+<div class="modal" id="paybill" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Error!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Sorry for inconvenience.</p>
+        <p>We are currently facing heavy load, please try after some time.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
